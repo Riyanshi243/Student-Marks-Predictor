@@ -1,0 +1,88 @@
+<!-- Student Mark Predictor App GUI -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+    <title>Student Marks Predictor</title>
+    <style>
+        .login{
+            background-size:cover;
+            height: 98vh;
+            background-image: url("static/BG.png");
+        }
+        .value{
+            margin-top: 40vh;
+            margin-left: 80vh;
+            width:40vh;
+            height:7vh; 
+            border-radius: 5px;
+        }
+    
+        .btn{
+            padding: 10px 35px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            text-size-adjust: 5vh;
+            margin-left: 85vh;
+            outline: none;
+            transition: .6s ease;
+            border-radius: 15px;
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+            transition: all .5s ease;
+        }
+        .btn:hover{
+            cursor: pointer;
+            border-radius: 15px;
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+            font-weight: bold;
+        }
+        .btn a:hover {
+            cursor: pointer;
+            background-color: transparent;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+        }
+        .output{
+            margin-top: 18vh;
+            margin-left: 40vh;
+            
+        }
+    </style>
+</head>
+
+<body>
+  
+ <div class="login">
+	
+    <!-- Form Get input to predict Marks-->
+    
+    
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="number" class="value" name="study_hours" placeholder="Enter number of hours you study!" required="required" />
+    	<br>
+        <br>
+        <!-- Show button -->
+        <div>
+            <button type="submit" class="btn"><strong>Predict My Marks</strong></button></a>
+        </div>
+    </form>
+   <!-- Show predicted output using ML model --> 
+   <div>
+       
+   <h2 class="output">{{ prediction_text }}</h2>
+    
+   </div>
+
+ </div>
+
+</body>
+</html>
