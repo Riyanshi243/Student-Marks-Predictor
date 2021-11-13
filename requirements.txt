@@ -6,7 +6,6 @@ ipython-genutils==0.2.0
 itsdangerous==2.0.1
 mkl-service==2.4.0
 PyQt5==5.12.3
-PyQt5_sip==4.19.18
 PyQtChart==5.12
 PyQtWebEngine==5.12.1
 pytz==2021.3
