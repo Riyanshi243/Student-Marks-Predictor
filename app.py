@@ -5,7 +5,7 @@ from flask import Flask, request, render_template
 import joblib
 
 app = Flask(__name__)
-model = joblib.load("student_marks_vs_hours_model.pkl")
+model = joblib.load("Student_marks_vs_hours_model.pkl")
 df = pd.DataFrame()
 
 @app.route('/')
