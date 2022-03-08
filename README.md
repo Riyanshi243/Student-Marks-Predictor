@@ -1,3 +1,4 @@
+
 # Student-Marks-Predictor
 My first Flask model hosted on Heroku
 
@@ -9,3 +10,4 @@ If we will do study x() hours per day so how much marks we will get? Through the
 To implement this model I am using Google Collab. The libraries used are Numpy, Pandas and Matplotlib. There is a scatter plot at the end to show the graphical form to data analysed and relation between variables.
 
 
+![StudentMarksPredictor](https://user-images.githubusercontent.com/74668022/157278379-f440b0d6-eec6-419e-a11f-cfde6e6d8ae0.png)
